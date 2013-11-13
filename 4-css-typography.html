@@ -142,55 +142,61 @@ a:hover, p a:hover{
 
 /* RESPONSIVE WEB DESIGN OVERRIDES */
 
-@media screen and (max-width:400px) {
-                
-        #header {
-                width:30%;
-                height:50%;
-                
-        }
-        #header h1 {
-                height:30%;
-                width:20%;
-                 font-size:1em;
-                color: ;
-        }
+@media screen and (max-width: 480px) {
+        .invisible {
+        width:auto;
+       }
 
-        #header h2 {
-               height:30%;
-               width:20%;
-               font-size:0.5em;
-        }
+        header h1 {
+        margin:0.1em 0;
+        font-size:2.25em;
+       padding-bottom:0.13em;
+       }
 
-       #img.left {
-        float: left;
-        height:50%
-        width:50%;
-    
+      header h2 {
+      margin:0.3em 0;
+      font-size:2em;
+      }
+
+
+      nav li, footer li {
+     font-size:2em;
+     padding:0 0.5em;
+      }
+
+      article p {
+      text-align:left;
         }
-        #article p {
-                height:50%;
-                width:20%;
-                text-align:justify;
+        article h1 {
                 font-size:1em;
+                margin:1em 0 0.4em;
         }
 
-        #article h1 {
-                height:50%;
-                width:20%;
-                font-size:1em;
-                text-align:center;
-        }
-
-        #article h2 {
-                height:50%;
-                width:20%;
-                font-size:1em;
+        article h2 {
+                font-size:0.75em;
+                margin:2em 0 0.625em;
                 font-weight:700;
-                text-align:center;
+        }
+}
+@media screen and (max-width: 320px) {
+        .invisible {
+        width:auto;
         }
 
-        #footer {
-        font-size:1em;
-        text-align:center;
+        header h1, article h1 {
+        margin:0.2em 0;
+        font-size:1.5em;
+        padding-bottom:0.2em;
         }
+
+        header h2, article h2 {
+        margin:0.3125em 0;
+        font-size:1em;
+        }
+
+        nav li, footer li {
+        font-size:1em;
+        padding:0 0.3em;
+       }
+}
+
